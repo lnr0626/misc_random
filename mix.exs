@@ -27,7 +27,7 @@ defmodule Misc.Random.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [{:ex_doc, ">= 0.0.0", only: :dev}]
+    [{:ex_doc, ">= 0.0.0", only: :dev, runtime: false}]
   end
 
   defp description do
@@ -44,7 +44,6 @@ defmodule Misc.Random.Mixfile do
      licenses: ["MIT"],
      links: %{
         "GitHub" => "https://github.com/gutschilla/elixir-helper-random"
-        # "Docs" => "http://ericmj.github.io/postgrex/"
       }
      ]
   end
